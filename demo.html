@@ -1,0 +1,53 @@
+<!--RFish 2014-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Muti-step Submit Form</title>
+</head>
+<body>
+    
+<form >
+    <!--ProcessBar-->
+    <ul>
+        <li>Login Info</li>
+        <li>Person Info</li>
+        <li>Others Info</li>
+    </ul>    
+    
+    <fieldset>
+        <h1>Login Info</h1>    
+        <h2>The info will be used to login!</h2>
+        <input type="text" placeholder="UserID" name="id">
+        <input type="password" placeholder="PassWord" name="pass">
+    </fieldset>
+    
+    <fieldset>
+        <h1>Person Info</h1>    
+        <h2>Radio choice!</h2>
+        <input type="text" placeholder="Name" name="name">
+        <label>Sex</label>
+        <input type="radio" name="sex" value="M">M
+        <input type="radio" name="sex" value="F">F
+        <label>Age</label>
+        <select name="age" id="">
+            <option value="0"> >18 </option>
+            <option value="1"> >20 </option>
+            <option value="2"> >30</option>
+        </select>
+    </fieldset>
+    
+    <fieldset>
+        <h1>Others Info</h1>    
+        <h2>Muti-option!</h2>
+        <label>Favorite Food</label>
+        <input type="checkbox" name="food[]">Apple
+        <input type="checkbox" name="food[]">Banana
+        <input type="checkbox" name="food[]">Coffee
+        <input type="checkbox" name="food[]">watermelon          
+    </fieldset>
+</form>
+    
+    
+</body>
+</html>
