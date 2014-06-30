@@ -4,27 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Muti-step Submit Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-<form >
+<form id='mutiStep' action="#">
     <!--ProcessBar-->
-    <ul>
-        <li>Login Info</li>
+    <ul id='processBar'>
+        <li class='active'>Login Info</li>
         <li>Person Info</li>
         <li>Others Info</li>
     </ul>    
     
     <fieldset>
-        <h1>Login Info</h1>    
-        <h2>The info will be used to login!</h2>
+        <h1 class="formTitle">Login Info</h1>    
+        <h2 class="formSubtitle">The info will be used to login!</h2>
         <input type="text" placeholder="UserID" name="id">
         <input type="password" placeholder="PassWord" name="pass">
+        <input type="button" name="next" class="next action-btn">Next
     </fieldset>
     
     <fieldset>
-        <h1>Person Info</h1>    
-        <h2>Radio choice!</h2>
+        <h1 class="formTitle">Person Info</h1>    
+        <h2 class="formSubtitle">Radio choice!</h2>
         <input type="text" placeholder="Name" name="name">
         <label>Sex</label>
         <input type="radio" name="sex" value="M">M
@@ -35,16 +37,21 @@
             <option value="1"> >20 </option>
             <option value="2"> >30</option>
         </select>
+        <input type="button" name="next" class="next action-btn">Next
+        <input type="button" name="previous" class="pre action-btn">Previous
     </fieldset>
     
     <fieldset>
-        <h1>Others Info</h1>    
-        <h2>Muti-option!</h2>
+        <h1 class="formTitle">Others Info</h1>    
+        <h2 class="formSubtitle">Muti-option!</h2>
         <label>Favorite Food</label>
         <input type="checkbox" name="food[]">Apple
         <input type="checkbox" name="food[]">Banana
         <input type="checkbox" name="food[]">Coffee
-        <input type="checkbox" name="food[]">watermelon          
+        <input type="checkbox" name="food[]">watermelon 
+        <input type="button" name="previous" class="pre action-btn">Previous        
+        <input type="submit" name="next" class="submit action-btn">Submit
+        
     </fieldset>
 </form>
     
