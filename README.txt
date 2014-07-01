@@ -5,7 +5,7 @@ by RFish 2014
 參考:http://thecodeplayer.com/walkthrough/jquery-multi-step-form-with-progress-bar
 
 Structure
-    demo.html : 各版本共用之展示Html
+    demo_vX.html : 各版本展示Html
     versonX : 
         stytle.css : UI版面設計
         stytle.js : UX功能骨幹
