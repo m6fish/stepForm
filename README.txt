@@ -8,8 +8,8 @@ Structure
     demo.html : 各版本共用之展示Html
     versonX : 
         stytle.css : UI版面設計
-        behavior.js : UX功能骨幹
+        stytle.js : UX功能骨幹
         
 Verson:
     v1 : 簡單模板
-    v2 : 加入滑動特效
+    v2 : 加強滑動特效
