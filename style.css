@@ -71,8 +71,8 @@ html {
     padding: 20px 30px;
     
 	box-sizing: border-box;
-    width: 80%;
-	margin: 0 10%;
+    width: 70%;
+	margin: 0 15%;
     
     /*stacking fieldsets above each other*/
 	position: absolute;
@@ -83,3 +83,41 @@ html {
 	display: none;
 }
 
+#mutiStep input, #mutiStep textarea {
+    box-sizing: border-box;
+    border:1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    padding:15px;
+    #margin:5px auto;
+    margin-bottom:10px;
+}
+
+#mutiStep .action_btn {
+    background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 2px;
+    width: 45%;
+}
+
+#mutiStep .action_btn:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+
+.formTitle {
+    font-size: 20px;
+    margin-bottom:5px;
+    color: #2C3E50;
+}
+
+.formSubtitle {
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom:20px;
+}

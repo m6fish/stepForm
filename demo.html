@@ -19,38 +19,40 @@
     <fieldset>
         <h1 class="formTitle">Login Info</h1>    
         <h2 class="formSubtitle">The info will be used to login!</h2>
-        <input type="text" placeholder="UserID" name="id">
-        <input type="password" placeholder="PassWord" name="pass">
-        <input type="button" name="next" class="next action-btn">Next
+        <input type="text" placeholder="UserID" name="id"/>
+        <input type="password" placeholder="PassWord" name="pass"/>
+        
+        <input type="button" name="next" class="next action_btn" value="Next"/>
     </fieldset>
     
     <fieldset>
         <h1 class="formTitle">Person Info</h1>    
         <h2 class="formSubtitle">Radio choice!</h2>
-        <input type="text" placeholder="Name" name="name">
+        <input type="text" placeholder="Name" name="name"/>
         <label>Sex</label>
-        <input type="radio" name="sex" value="M">M
-        <input type="radio" name="sex" value="F">F
+        <input type="radio" name="sex" value="M">M</input>
+        <input type="radio" name="sex" value="F">F</input>
         <label>Age</label>
         <select name="age" id="">
             <option value="0"> >18 </option>
             <option value="1"> >20 </option>
             <option value="2"> >30</option>
         </select>
-        <input type="button" name="next" class="next action-btn">Next
-        <input type="button" name="previous" class="pre action-btn">Previous
+        <input type="button" name="previous" class="pre action_btn" value= "Previous"/>
+        <input type="button" name="next" class="next action_btn" value="Next"/>
     </fieldset>
     
     <fieldset>
         <h1 class="formTitle">Others Info</h1>    
         <h2 class="formSubtitle">Muti-option!</h2>
         <label>Favorite Food</label>
-        <input type="checkbox" name="food[]">Apple
-        <input type="checkbox" name="food[]">Banana
-        <input type="checkbox" name="food[]">Coffee
-        <input type="checkbox" name="food[]">watermelon 
-        <input type="button" name="previous" class="pre action-btn">Previous        
-        <input type="submit" name="next" class="submit action-btn">Submit
+        <input type="checkbox" name="food[]">Apple</input>
+        <input type="checkbox" name="food[]">Banana</input>
+        <input type="checkbox" name="food[]">Coffee</input>
+        <input type="checkbox" name="food[]">watermelon </input>
+        <textarea name="meno" placeholder="MENO"></textarea>
+        <input type="button" name="previous" class="pre action_btn" value= "Previous"/>
+        <input type="submit" name="next" class="submit action_btn" value="Submit"/>
         
     </fieldset>
 </form>
