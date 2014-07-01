@@ -29,15 +29,15 @@
         <h1 class="formTitle">Person Info</h1>    
         <h2 class="formSubtitle">Radio choice!</h2>
         <input type="text" placeholder="Name" name="name"/>
-        <label>Sex</label>
-        <input type="radio" name="sex" value="M">M</input>
-        <input type="radio" name="sex" value="F">F</input>
-        <label>Age</label>
+        <label class='choiceTitle'>Sex : </label>
+        M<input class='radio' type="radio" name="sex" value="M"/>
+        F<input class='radio' type="radio" name="sex" value="F"/><br/>
+        <label>Age : </label>
         <select name="age" id="">
             <option value="0"> >18 </option>
             <option value="1"> >20 </option>
             <option value="2"> >30</option>
-        </select>
+        </select><br/>
         <input type="button" name="previous" class="pre action_btn" value= "Previous"/>
         <input type="button" name="next" class="next action_btn" value="Next"/>
     </fieldset>
@@ -45,12 +45,12 @@
     <fieldset>
         <h1 class="formTitle">Others Info</h1>    
         <h2 class="formSubtitle">Muti-option!</h2>
-        <label>Favorite Food</label>
-        <input type="checkbox" name="food[]">Apple</input>
-        <input type="checkbox" name="food[]">Banana</input>
-        <input type="checkbox" name="food[]">Coffee</input>
-        <input type="checkbox" name="food[]">watermelon </input>
-        <textarea name="meno" placeholder="MENO"></textarea>
+        <label>Favorite Food :</label><br/>
+        <input class="checkbox" type="checkbox" name="food[]" />Apple<br/>
+        <input class="checkbox" type="checkbox" name="food[]"/>Banana<br/>
+        <input class="checkbox" type="checkbox" name="food[]"/>Coffee<br/>
+        <input class="checkbox" type="checkbox" name="food[]"/>watermelon
+        <textarea name="meno" placeholder="MEMO"></textarea>
         <input type="button" name="previous" class="pre action_btn" value= "Previous"/>
         <input type="submit" name="next" class="submit action_btn" value="Submit"/>
         
