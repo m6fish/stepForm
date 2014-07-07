@@ -1,0 +1,137 @@
+/*RFish 2014*/
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+html {
+	height: 100%;
+    background:gray;
+}
+
+#mutiStep{
+    width:500px;
+	text-align: center;
+    margin: 50px auto;
+    position: relative;
+}
+
+#processBar{
+    margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+
+#processBar li:before {
+    border-radius: 3px;
+    background-color:white;
+    content: "Step:" counter(step);
+	counter-increment: step;
+    color:black;
+    display: block;
+    line-height: 20px;
+	margin: 0 auto 5px auto;
+    width:50px;
+}
+
+#processBar li {
+    color:white;
+    float:left;
+    list-style-type: none;
+    position: relative;
+    width:33.33%;
+}
+
+#processBar li:after{
+    background: white;
+    content:'';
+    height:2px;
+    position: absolute;
+    left:-35%;
+    top:10px;
+    width:120px;
+    z-index:-1;
+}
+
+#processBar li:first-child:after {
+    content:none;
+}
+
+/*active processBar*/
+#processBar li.active:before,#processBar li.active:after {
+    background-color:green;
+    color:white;
+}
+
+
+#mutiStep fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    
+	box-sizing: border-box;
+    width: 70%;
+	margin: 0 15%;
+    
+    /*stacking fieldsets above each other*/
+	position: absolute;
+}
+
+/*Hide all except first fieldset*/
+#mutiStep fieldset:not(:first-of-type) {
+	display: none;
+}
+
+#mutiStep input, #mutiStep textarea {
+    box-sizing: border-box;
+    border:1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    padding:15px;
+    #margin:5px auto;
+    margin-bottom:10px;
+}
+
+#mutiStep .action_btn {
+    background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 2px;
+    width: 45%;
+}
+
+#mutiStep .action_btn:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+#mutiStep .radio , #mutiStep .checkbox{   
+    margin: 10px auto;
+    width:30px;
+}
+
+#mutiStep select{
+    margin-bottom:10px;
+}
+
+.formTitle {
+    font-size: 20px;
+    margin-bottom:5px;
+    color: #2C3E50;
+}
+
+.formSubtitle {
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom:20px;
+}
+
+.choiceTitle{
+    font-size: 16px;
+    margin-bottom:10px;
+}
