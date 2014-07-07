@@ -1,0 +1,65 @@
+<!--RFish 2014-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html5 Test From</title>
+</head>
+<body>
+     <form  id="commentForm" autocomplete="off" method="get" action="#">
+     <fieldset>
+         <label for="cname">Name</label>
+         <input id="cname" name="name" size="25" /><br/>
+         
+         <label for="cemail">E-Mail</label>
+         <input id="cemail" name="email" size="25"  /><br/>
+         
+         <label for="ccomment">Your comment</label>
+         <textarea id="ccomment" name="comment" cols="22"  ></textarea><br/>
+         
+         <input type="submit" value="Submit"/>
+     </fieldset>
+ </form>
+ <script src="http://thecodeplayer.com/uploads/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<!-- jQuery form-validate plugin -->
+<script type="text/javascript" src="verson3/jquery.validate.js"></script>
+<!--
+<script type="text/javascript" src="verson3/jquery.metadata.min.js"></script>
+-->
+     <script type="text/javascript" charset="utf-8">
+        $(document).ready( function(){
+             $('#commentForm').validate({
+                event: "keyup",
+                rules:{
+                    name:{
+                        required:true,
+                        minlength: 2,
+                        maxlength: 5
+                    },
+                    email:{
+                        required:true,
+                        email:true
+                    }
+                },
+                messages: {
+                    name: {
+                        required: "請輸入您的名稱.",
+                        minlength: "不能小於2位.",
+                        maxlength: "不能長於5位."
+                    },
+                    email: {
+                        required: "*必填",
+                        email: "不存在的email"
+                    }
+                },
+                // specifying a submitHandler prevents the default submit, good for the demo
+                submitHandler: function() {
+                    alert("submitted!");
+                }
+                
+             });//end validate
+        });
+     </script>
+
+</body>
+</html>
