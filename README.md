@@ -13,5 +13,5 @@ Structure
         stytle.js : UX功能骨幹
         
 Verson:
-    v1 : 簡單模板
-    v2 : 加強滑動特效
+ * v1. [簡單套用](http://m6fish.github.io/stepForm/demo_v1.html)
+ * v2. [加強滑動](http://m6fish.github.io/stepForm/demo_v2.html)
