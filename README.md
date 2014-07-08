@@ -3,7 +3,7 @@ StepForm
 
 by RFish 2014
 
-##製作一個多步驟的Html5表單模板##
+###製作一個多步驟的Html5表單模板###
 [參考](http://thecodeplayer.com/walkthrough/jquery-multi-step-form-with-progress-bar)
 
 [Demo](http://m6fish.github.io/stepForm/demo_v2.html)
